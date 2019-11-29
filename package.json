@@ -6,14 +6,20 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "test-lib": "ng test gb-spinner --browsers=ChromeHeadless --watch=false",
-    "test-lib-watch": "ng test gb-spinner --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "test-spinner": "ng test gb-spinner --browsers=ChromeHeadless --watch=false",
+    "test-spinner-watch": "ng test gb-spinner --browsers=ChromeHeadless",
     "build-gb-spinner": "ng build gb-spinner",
     "build-gb-spinner-watch": "ng build gb-spinner watch",
     "lint-gb-spinner": "ng lint gb-spinner",
-    "pack-gb-spinner": "cd dist/gb-spinner && npm pack"
+    "pack-gb-spinner": "cd dist/gb-spinner && npm pack",
+    "test-bar-spinner": "ng test gb-bar-spinner --browsers=ChromeHeadless --watch=false",
+    "test-bar-spinner-watch": "ng test gb-bar-spinner --browsers=ChromeHeadless",
+    "build-gb-bar-spinner": "ng build gb-bar-spinner",
+    "build-gb-bar-spinner-watch": "ng build gb-bar-spinner watch",
+    "lint-gb-bar-spinner": "ng lint gb-bar-spinner",
+    "pack-gb-bar-spinner": "cd dist/gb-bar-spinner && npm pack"
   },
   "private": true,
   "dependencies": {

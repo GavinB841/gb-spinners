@@ -1,0 +1,174 @@
+
+:host ::ng-deep .gb-bar-spinner {
+  width:100px;
+  height:100px;
+  margin:30px auto;
+  position:relative;
+  text-align: center;
+
+  .gb-bar-spinner-text {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 100%;
+  }
+
+  :host ::ng-deep .gb-bar-spinner-modal {
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+
+    :host ::ng-deep .gb-bar-spinner-dialog{
+      width: 100%;
+      max-width: 100%;
+      padding: 0 10px;
+      position: relative;
+      margin: auto;
+      margin-top: 150px;
+      transform: translate(0, 0);
+      transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+      text-align: center;
+    }
+  }
+
+  .gb-bar-spinner-bars div{
+    margin: auto;
+    width: 10px;
+    height: 30px;
+    background: black;
+    position: absolute;
+    top: 35px;
+    left: 45px;
+    opacity:0.05;
+    -webkit-animation: fadeit 1.1s linear infinite;
+    -moz-animation: fadeit 1.1s linear infinite;
+    animation: fadeit 1.1s linear infinite;
+
+    &:nth-child(1){
+      -webkit-transform: rotate(0deg) translate(0, -30px);
+      -moz-transform: rotate(0deg) translate(0, -30px);
+      transform: rotate(0deg) translate(0, -30px);
+
+      -webkit-animation-delay:0.39s;
+      -moz-animation-delay:0.39s;
+      animation-delay:0.39s;
+    }
+    &:nth-child(2){
+      -webkit-transform: rotate(45deg) translate(0, -30px);
+      -moz-transform: rotate(45deg) translate(0, -30px);
+      transform: rotate(45deg) translate(0, -30px);
+
+      -webkit-animation-delay:0.52s;
+      -moz-animation-delay:0.52s;
+      animation-delay:0.52s;
+    }
+
+    &:nth-child(3){
+      -webkit-transform: rotate(90deg) translate(0, -30px);
+      -moz-transform: rotate(90deg) translate(0, -30px);
+      transform: rotate(90deg) translate(0, -30px);
+
+      -webkit-animation-delay:0.65s;
+      -moz-animation-delay:0.65s;
+      animation-delay:0.65s;
+    }
+
+    &:nth-child(4){
+      -webkit-transform: rotate(135deg) translate(0, -30px);
+      -moz-transform: rotate(135deg) translate(0, -30px);
+      transform: rotate(135deg) translate(0, -30px);
+
+      -webkit-animation-delay:0.78s;
+      -moz-animation-delay:0.78s;
+      animation-delay:0.78s;
+    }
+
+    &:nth-child(5){
+      -webkit-transform: rotate(180deg) translate(0, -30px);
+      -moz-transform: rotate(180deg) translate(0, -30px);
+      transform: rotate(180deg) translate(0, -30px);
+
+      -webkit-animation-delay:0.91s;
+      -moz-animation-delay:0.91s;
+      animation-delay:0.91s;
+    }
+
+
+    &:nth-child(6){
+      -webkit-transform: rotate(225deg) translate(0, -30px);
+      -moz-transform: rotate(225deg) translate(0, -30px);
+      transform: rotate(225deg) translate(0, -30px);
+
+      -webkit-animation-delay:1.04s;
+      -moz-animation-delay:1.04s;
+      animation-delay:1.04s;
+    }
+
+    &:nth-child(7){
+      -webkit-transform: rotate(270deg) translate(0, -30px);
+      -moz-transform: rotate(270deg) translate(0, -30px);
+      transform: rotate(270deg) translate(0, -30px);
+
+      -webkit-animation-delay:1.17s;
+      -moz-animation-delay:1.17s;
+      animation-delay:1.17s;
+    }
+
+    &:nth-child(8){
+      -webkit-transform: rotate(315deg) translate(0, -30px);
+      -moz-transform: rotate(315deg) translate(0, -30px);
+      transform: rotate(315deg) translate(0, -30px);
+
+      -webkit-animation-delay:1.3s;
+      -moz-animation-delay:1.3s;
+      animation-delay:1.3s;
+    }
+  }
+
+  .gb-bar-spinner-backdrop {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: black;
+  }
+
+
+  @-webkit-keyframes fadeit{
+    0%{
+      opacity:1;
+    }
+    100%{
+      opacity:0;
+    }
+  }
+  @-moz-keyframes fadeit{
+    0%{
+      opacity:1;
+    }
+    100%{
+      opacity:0;
+    }
+  }
+  @keyframes fadeit{
+    0%{
+      opacity:1;
+    }
+    100%{
+      opacity:0;
+    }
+  }
+}
+
+

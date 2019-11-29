@@ -23,6 +23,12 @@
       ],
       "gb-spinner/*": [
         "dist/gb-spinner/*"
+      ],
+      "gb-bar-spinner": [
+        "dist/gb-bar-spinner"
+      ],
+      "gb-bar-spinner/*": [
+        "dist/gb-bar-spinner/*"
       ]
     }
   }

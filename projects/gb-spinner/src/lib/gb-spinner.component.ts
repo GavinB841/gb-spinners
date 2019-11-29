@@ -8,8 +8,8 @@ import { GbSpinnerService } from './gb-spinner.service';
           <div class="gb-spinner-modal" role="dialog" tabindex="-1">
               <div class="gb-spinner-dialog">
                   <div class="gb-spinner-icon"></div>
-                  <div class="gb-spinner-text" [innerHTML]="text"></div>
               </div>
+              <div class="gb-spinner-text" [innerHTML]="text"></div>
           </div>
           <div class="gb-spinner-backdrop"></div>
       </div>

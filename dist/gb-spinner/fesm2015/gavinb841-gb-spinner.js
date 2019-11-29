@@ -1,4 +1,4 @@
-import { Injectable, Component, NgModule, defineInjectable } from '@angular/core';
+import { Injectable, NgModule, Component, defineInjectable } from '@angular/core';
 
 /**
  * @fileoverview added by tsickle
@@ -100,7 +100,7 @@ GbSpinnerComponent.decorators = [
                 selector: 'gb-spinner',
                 template: `
       <div class="gb-spinner" [hidden]="!isShown">
-          <div class="gb-spinner-modal" role="dialog" index="0" tabindex="-1">
+          <div class="gb-spinner-modal" role="dialog" tabindex="-1">
               <div class="gb-spinner-dialog">
                   <div class="gb-spinner-icon"></div>
                   <div class="gb-spinner-text" [innerHTML]="text"></div>
