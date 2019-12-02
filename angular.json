@@ -72,6 +72,41 @@
           }
         }
       }
+    },
+    "gb-circle-spinner": {
+      "root": "projects/gb-circle-spinner",
+      "sourceRoot": "projects/gb-circle-spinner/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/gb-circle-spinner/tsconfig.lib.json",
+            "project": "projects/gb-circle-spinner/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/gb-circle-spinner/src/test.ts",
+            "tsConfig": "projects/gb-circle-spinner/tsconfig.spec.json",
+            "karmaConfig": "projects/gb-circle-spinner/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/gb-circle-spinner/tsconfig.lib.json",
+              "projects/gb-circle-spinner/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "gb-spinner"

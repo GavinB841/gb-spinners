@@ -29,6 +29,12 @@
       ],
       "gb-bar-spinner/*": [
         "dist/gb-bar-spinner/*"
+      ],
+      "gb-circle-spinner": [
+        "dist/gb-circle-spinner"
+      ],
+      "gb-circle-spinner/*": [
+        "dist/gb-circle-spinner/*"
       ]
     }
   }
